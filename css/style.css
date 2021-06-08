@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#h-lion{
+    color: rgb(201, 251, 212);
+    padding: 4px;
+}
+
+/* hero section*/
+#hero {
+    background-image: url(/img/bg-lion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .2;
+    z-index: -1;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: white;
+}
+#hero .ab{
+    display: inline-block;
+    padding: 10px 25px;
+    color: rgb(93, 12, 2);
+    border: 2px solid rgb(53, 2, 15);
+    background-color: rgb(251, 243, 243, 0.1);
+    font-size: 1.5rem ;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+    border-radius: 4px;
+
+}
+#hero .ab:hover{
+    color: lavender;
+    background-color: rgb(73, 70, 70);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius:5px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p {
+    color: rgb(200, 214, 200);
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+/* end of hero section*/
+
+/* services section*/
+#services .service{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.section-title{
+font-size: 4rem;
+font-weight: 300;
+color: rgb(51, 51, 31);
+margin-bottom: 10px;
+text-transform: uppercase;
+letter-spacing: .2rem;
+text-align: center;
+}
+.section-title span{
+    color: mediumvioletred;
+    background-color: oldlace;
+    border:  1px solid rgb(135, 141, 135, .1);
+}
+#services .service-top p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: rgb(29, 21, 21);
+}
+#services .service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+#services .service .item {
+    flex-basis: 80%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: url(/img/gery-wibowo-Eti6ph51H4A-unsplash.jpg);
+    background-size: cover;
+    margin: 10px 6px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#services .service .item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(25, 11, 36);
+    opacity: .5;
+    z-index: -1;
+}
+#services .service .bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#services .service .item h2{
+    font-size: 2rem;
+    color: rgb(251, 234, 234);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#services .service .item p{
+    text-align: left;
+    color: rgb(190, 178, 131);
+}
+/* end of services section*/
+
+/* Project section*/
+#project .project{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#project .project-header h1{
+    margin-bottom: 50px;
+}
+#project .all-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+#project .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    width: 60%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#project .project-info{
+    padding: 20px;
+    flex-basis: 50%;
+    background-color: rgba(81, 98, 131, 0.7);
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#project .project-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+#project .project-info h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 8px;
+}
+#project .project-img{
+    flex-basis: 50%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+
+}
+#project .project-img::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(14, 13, 13, 0.5);
+}
+#project .project-info:hover .project-img img{
+    transform: scale(1.2);
+}
+/* end of Project section*/
+
+/*about */
+#about .about{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 25px;
+}
+#about .col-left{
+    width: 250px;
+    height: 350px;
+}
+#about .col-right{
+    width: 100%;
+}
+#about .col-right h3{
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-bottom: 10px;
+}
+#about .col-right p{
+    margin-bottom: 20px;
+}
+#about-link{
+    background-color:rgb(32, 1, 37);
+    border: 1px solid rgba(7, 117, 25, 0.8);
+    color: rgb(251, 234, 234);
+    padding: 6px;
+    margin: 3px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+}
+#about-link:hover{
+    background-color: rgb(250, 249, 249);
+    color: rgb(12, 1, 1);
+}
+#contract{
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(8, 3, 3);
+    font-size: 1.2rem;
+    border: 1px solid lightcyan;
+    background-color: rgb(243, 237, 237);
+}
+#about-me{
+    color: black;
+}
+
+
